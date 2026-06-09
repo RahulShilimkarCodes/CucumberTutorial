@@ -1,4 +1,9 @@
 Feature: Application Login
+	
+	#Scope of background is within feature file, all the Scenario/Scenario Outline will execute the background before running the test..
+  Background: 
+    Given this cases would run for all the tests
+    And are particular to this feature file alone
 
   @AdminLogin
   Scenario: Admin default login page
