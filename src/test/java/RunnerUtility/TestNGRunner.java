@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features="classpath:FeatureFiles/netBanking.feature",
 		glue="stepDefinitions",		//package name
-		dryRun=false,
+		dryRun=false,		//will run the test...if dryRun=true - will just check the steps mapping..
 		monochrome=true,
 		//tags="@DataTableMaps or @DataTableList",
 		//tags="not @DataTableMaps",
