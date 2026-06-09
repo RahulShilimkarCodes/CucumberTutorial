@@ -1,13 +1,13 @@
 Feature: Application Login
-	
-	@AdminLogin
+
+  @AdminLogin
   Scenario: Admin default login page
     Given Admin user is on netbanking login page
     When user logins to the application with username as "admin" and password as "password"
     Then Home Page is displayed
     And Cards are displayed
 
-	@CreditLogin
+  @CreditLogin
   Scenario: Credit Card User default login page
     Given Credit card user is on netbanking login page
     When user logins to the application with username as "creditCard" and password as "passwordCard"
@@ -15,7 +15,7 @@ Feature: Application Login
     And Cards are displayed
 
   #Data Driven Testing  - Runs test 3 times
-  @DatDriven
+  @DataDriven
   Scenario Outline: Credit Card User default login page
     Given Credit card user is on netbanking login page
     When user logins to the application with username as "<Username>" and password as "<Password>" using datas
