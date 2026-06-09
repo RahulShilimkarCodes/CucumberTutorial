@@ -7,7 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 		features="classpath:FeatureFiles/netBanking.feature",
 		glue="stepDefinitions",		//package name
 		dryRun=false,
-		monochrome=true
+		monochrome=true,
+		//tags="@DataTableMaps or @DataTableList",
+		tags="@DataTableListOfMaps"
 		)
 public class TestNGRunner extends AbstractTestNGCucumberTests{
 
